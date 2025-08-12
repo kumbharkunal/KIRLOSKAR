@@ -116,7 +116,7 @@ async function submitFormAndDisplayResults() {
         compressorSelection: compressorSelection, refrigerant: refrigerant, powerSupply: powerSupply,
         evaporatorLWT: evaporatorLWT, condenserLWT: condenserLWT, desuperheater: desuperheater
     });
-    const url = `http://127.0.0.1:5000/api/calculate_chiller?${params.toString()}`;
+    const url = `api/calculate_chiller?${params.toString()}`;
     const calculateButton = document.getElementById('calculateButton');
     const confirmDownloadButton = document.getElementById('confirmDownloadButton');
     const resultsDisplayContainer = document.getElementById('resultsDisplayContainer');
